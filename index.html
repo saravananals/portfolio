@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Saravanan Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">Saravanan</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+            I'm <span>Saravanan<br />a</span> COLLEGE STUDENT
+           </h1>
+           <p class="description">
+            Welcome to my portfolio! I'm Saravanan, 
+            An experienced web developer with a passion for creating an attractive and 
+            interactive website
+            Meeting customer needs and exceeding expectations well- version in developing custom 
+            wardpress themes and plugins excels in HTMl, CSS, Javascript
+          </p>
+          <div class="action__btns">
+            <button class="hire__me">Hire Me</button>
+            <button class="portfolio">Portfolio</button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="myphoto.jpg.jpeg" alt="profile" />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="section-content">
+          <h2>About Me</h2> <br>
+          <p>Welcome to my portfolio! I'm Saravanan, An experienced web developer with a 
+            passion for creating an attractive and interactive website Meeting customer
+             needs and exceeding expectations well- version in developing custom wardpress
+              themes and plugins excels in HTMl, CSS, Javascript</p>
+
+      </div>
+  </section>
+
+  <section id="education">
+      <div class="section-content">
+          <h2>Education</h2><br>
+          <p>Sri lakshmicollege of art's and Science<br> 
+            B.Sc., Computer Science<br>
+            Affiliated by Annamalai University </p>
+
+      </div>
+  </section>
+
+  <section id="skills">
+      <div class="section-content">
+          <h2>Skills</h2>
+          <ul>
+              <li>C, C++</li> <br>  
+              <li>Ms office</li><br>
+              <li>HTML, CSS,</li><br>
+              <li>Python</li><br>
+              <li>JAVA</li><br>
+          </ul>
+      </div>
+  </section>
+
+  <section id="projects">
+      <div class="section-content">
+          <h2>Projects</h2>
+          <ul>
+              <li><a href="#">MY Portfolio</a></li>
+              <li><a href="#">Cloud Security IBM</a></li>
+              <li><a href="#">My-chetbot</a></li>
+              <!-- Add more project links here -->
+          </ul>
+      </div>
+  </section>
+
+    <section id="resume">
+    
+      <div class="section-content">
+          <center>
+          <h2>Resume</h2>
+          <a href="RESUME.jpg"target="_blank" 
+          class="download-button">Download CV</a>
+      </center>
+      </div>
+      
+  </section>
+
+  <footer>
+      <p>&copy; 2023 Saravanan A</p>
+  </footer>
+
+  <script>
+      // Smooth scrolling to section when clicking on navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+              e.preventDefault();
+
+              const targetId = this.getAttribute('href').substring(1);
+              const targetElement = document.getElementById(targetId);
+
+              if (targetElement) {
+                  window.scrollTo({
+                      top: targetElement.offsetTop,
+                      behavior: 'smooth'
+                  });
+              }
+          });
+      });
+  </script>
+</body>
+</html>
+
+    </body>
+</html>
